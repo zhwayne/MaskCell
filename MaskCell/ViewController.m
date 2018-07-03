@@ -11,6 +11,7 @@
 #import "CurtainTableViewCell.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -37,7 +38,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row % 4 != 2) {
+    if (arc4random() % 2 == 0) {
         return [tableView dequeueReusableCellWithIdentifier:@"cell2"];
     }
     

@@ -60,8 +60,11 @@
     CGFloat start = CGRectGetMinY(relativeFrame) - (CGRectGetMinY(_scrollView.frame) - CGRectGetMinY(refrenceView.frame)) - inset.top;
     CGFloat distance = CGRectGetHeight(_scrollView.frame) - CGRectGetHeight(self.frame) - inset.bottom - inset.top;
     CGFloat progress = MIN(1, MAX(start / distance, 0));
-    _maskProgress = progress;
-    [self didUpdateProgress:progress];
+    
+    if (progress != _maskProgress) {
+        _maskProgress = progress;
+        [self didUpdateProgress:progress];
+    }
 }
 
 #pragma mark - Public
