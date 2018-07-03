@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B029301320EA6D64003E6C88 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301120EA6D64003E6C88 /* 0.png */; };
-		B029301420EA6D64003E6C88 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301220EA6D64003E6C88 /* 1.png */; };
+		B029301320EA6D64003E6C88 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301120EA6D64003E6C88 /* 1.png */; };
+		B029301420EA6D64003E6C88 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301220EA6D64003E6C88 /* 0.png */; };
 		B029301620EA6EA6003E6C88 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B029301520EA6EA6003E6C88 /* 2.jpeg */; };
 		B029301920EA6F0C003E6C88 /* MaskCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B029301820EA6F0C003E6C88 /* MaskCurtainView.m */; };
 		B029301C20EA6FAF003E6C88 /* CurtainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B029301B20EA6FAF003E6C88 /* CurtainTableViewCell.m */; };
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		B029301020EA6868003E6C88 /* MaskUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskUtils.h; sourceTree = "<group>"; };
-		B029301120EA6D64003E6C88 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
-		B029301220EA6D64003E6C88 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B029301120EA6D64003E6C88 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B029301220EA6D64003E6C88 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
 		B029301520EA6EA6003E6C88 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		B029301720EA6F0C003E6C88 /* MaskCurtainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskCurtainView.h; sourceTree = "<group>"; };
 		B029301820EA6F0C003E6C88 /* MaskCurtainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskCurtainView.m; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 		B09920AD20EB04B400EA0230 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B029301220EA6D64003E6C88 /* 1.png */,
-				B029301120EA6D64003E6C88 /* 0.png */,
+				B029301220EA6D64003E6C88 /* 0.png */,
+				B029301120EA6D64003E6C88 /* 1.png */,
 				B029301520EA6EA6003E6C88 /* 2.jpeg */,
 			);
 			path = Resource;
@@ -202,9 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B099209820EA1BFF00EA0230 /* LaunchScreen.storyboard in Resources */,
-				B029301420EA6D64003E6C88 /* 1.png in Resources */,
+				B029301420EA6D64003E6C88 /* 0.png in Resources */,
 				B029301620EA6EA6003E6C88 /* 2.jpeg in Resources */,
-				B029301320EA6D64003E6C88 /* 0.png in Resources */,
+				B029301320EA6D64003E6C88 /* 1.png in Resources */,
 				B099209520EA1BFF00EA0230 /* Assets.xcassets in Resources */,
 				B099209320EA1BFE00EA0230 /* Main.storyboard in Resources */,
 			);
