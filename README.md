@@ -43,9 +43,9 @@ MaskBasicView 不能够直接使用，你需要派生一个子类实现你想要
 - (void)didUpdateProgress:(CGFloat)progress {
     [super didUpdateProgress:progress];
     
-    CGFloat offset = CGRectGetHeight(self.frame) / 3;
     CGFloat width = CGRectGetWidth(self.frame);
-    CGFLoat height = CGRectGetHeight(self.frame);
+    CGFloat height = CGRectGetHeight(self.frame);
+    CGFloat offset = MIN(height, width) / 3;
     CGFloat radius = sqrt(pow(width - offset, 2) + pow(height - offset, 2)) * (1 - progress);
     _aMaskView.layer.cornerRadius = radius;
     _aMaskView.frame = CGRectFromCenterSize(
