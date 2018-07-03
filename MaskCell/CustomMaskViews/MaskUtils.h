@@ -11,7 +11,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 
-extern CGRect CGRectMakeCenterSize(CGPoint center, CGSize size)
+extern CGRect CGRectFromCenterSize(CGPoint center, CGSize size)
 {
     return CGRectMake(center.x - size.width / 2,
                       center.y - size.height / 2,

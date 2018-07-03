@@ -20,7 +20,6 @@
 
 - (void)dealloc {
     if (_scrollView) [_scrollView removeObserver:self forKeyPath:@"contentOffset"];
-
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {

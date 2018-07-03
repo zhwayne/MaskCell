@@ -28,12 +28,14 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         _imageView0 = [[UIImageView alloc] initWithFrame:frame];
+        _imageView0.backgroundColor = [UIColor whiteColor];
         _imageView0.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _imageView0.contentMode = UIViewContentModeScaleAspectFill;
         _imageView0.clipsToBounds = YES;
         [self addSubview:_imageView0];
         
         _imageView1 = [[UIImageView alloc] initWithFrame:frame];
+        _imageView1.backgroundColor = [UIColor whiteColor];
         _imageView1.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         _imageView1.contentMode = UIViewContentModeScaleAspectFill;
         _imageView1.clipsToBounds = YES;
@@ -61,9 +63,10 @@
 
 - (void)didUpdateProgress:(CGFloat)progress {
     [super didUpdateProgress:progress];
-    CGFloat radius = sqrt(pow(CGRectGetWidth(self.frame), 2) + pow(CGRectGetHeight(self.frame), 2)) * (1 - progress);
-    _aMaskView.frame = CGRectMakeCenterSize(CGPointMake(CGRectGetMaxX(self.frame),
-                                                        CGRectGetMaxY(self.frame)),
+    CGFloat offset = CGRectGetHeight(self.frame) / 3;
+    CGFloat radius = sqrt(pow(CGRectGetWidth(self.frame) - offset, 2) + pow(CGRectGetHeight(self.frame) - offset, 2)) * (1 - progress);
+    _aMaskView.frame = CGRectFromCenterSize(CGPointMake(CGRectGetMaxX(self.frame) - offset,
+                                                        CGRectGetMaxY(self.frame) - offset),
                                             CGSizeMake(radius * 2, radius * 2));
     _aMaskView.layer.cornerRadius = radius;
 }

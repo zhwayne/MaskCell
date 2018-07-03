@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B029301320EA6D64003E6C88 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301120EA6D64003E6C88 /* 1.png */; };
-		B029301420EA6D64003E6C88 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301220EA6D64003E6C88 /* 0.png */; };
+		B029301320EA6D64003E6C88 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301120EA6D64003E6C88 /* 0.png */; };
+		B029301420EA6D64003E6C88 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B029301220EA6D64003E6C88 /* 1.png */; };
 		B029301620EA6EA6003E6C88 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B029301520EA6EA6003E6C88 /* 2.jpeg */; };
 		B029301920EA6F0C003E6C88 /* MaskCurtainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B029301820EA6F0C003E6C88 /* MaskCurtainView.m */; };
 		B029301C20EA6FAF003E6C88 /* CurtainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B029301B20EA6FAF003E6C88 /* CurtainTableViewCell.m */; };
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		B029301020EA6868003E6C88 /* MaskUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskUtils.h; sourceTree = "<group>"; };
-		B029301120EA6D64003E6C88 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		B029301220EA6D64003E6C88 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		B029301120EA6D64003E6C88 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		B029301220EA6D64003E6C88 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		B029301520EA6EA6003E6C88 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		B029301720EA6F0C003E6C88 /* MaskCurtainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskCurtainView.h; sourceTree = "<group>"; };
 		B029301820EA6F0C003E6C88 /* MaskCurtainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskCurtainView.m; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B029300F20EA55D2003E6C88 /* classes */ = {
+		B029300F20EA55D2003E6C88 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				B09920A420EA1D4600EA0230 /* MaskBasicView.h */,
@@ -72,7 +72,7 @@
 				B09920A720EA1FAA00EA0230 /* UIView+FindSuper.h */,
 				B09920A820EA1FAA00EA0230 /* UIView+FindSuper.m */,
 			);
-			path = classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B099207F20EA1BFE00EA0230 = {
@@ -94,23 +94,14 @@
 		B099208A20EA1BFE00EA0230 /* MaskCell */ = {
 			isa = PBXGroup;
 			children = (
-				B029300F20EA55D2003E6C88 /* classes */,
+				B029300F20EA55D2003E6C88 /* Classes */,
 				B099208B20EA1BFE00EA0230 /* AppDelegate.h */,
 				B099208C20EA1BFE00EA0230 /* AppDelegate.m */,
 				B099208E20EA1BFE00EA0230 /* ViewController.h */,
 				B099208F20EA1BFE00EA0230 /* ViewController.m */,
-				B029301020EA6868003E6C88 /* MaskUtils.h */,
-				B0568E3320EA307E00BFF159 /* MaskSwitchView.h */,
-				B0568E3420EA307E00BFF159 /* MaskSwitchView.m */,
-				B09920A120EA1C9800EA0230 /* SwitchTableViewCell.h */,
-				B09920A220EA1C9800EA0230 /* SwitchTableViewCell.m */,
-				B029301720EA6F0C003E6C88 /* MaskCurtainView.h */,
-				B029301820EA6F0C003E6C88 /* MaskCurtainView.m */,
-				B029301A20EA6FAF003E6C88 /* CurtainTableViewCell.h */,
-				B029301B20EA6FAF003E6C88 /* CurtainTableViewCell.m */,
-				B029301220EA6D64003E6C88 /* 0.png */,
-				B029301120EA6D64003E6C88 /* 1.png */,
-				B029301520EA6EA6003E6C88 /* 2.jpeg */,
+				B09920AB20EB046100EA0230 /* CustomMaskViews */,
+				B09920AC20EB048F00EA0230 /* Cells */,
+				B09920AD20EB04B400EA0230 /* Resource */,
 				B099209120EA1BFE00EA0230 /* Main.storyboard */,
 				B099209420EA1BFF00EA0230 /* Assets.xcassets */,
 				B099209620EA1BFF00EA0230 /* LaunchScreen.storyboard */,
@@ -118,6 +109,39 @@
 				B099209A20EA1BFF00EA0230 /* main.m */,
 			);
 			path = MaskCell;
+			sourceTree = "<group>";
+		};
+		B09920AB20EB046100EA0230 /* CustomMaskViews */ = {
+			isa = PBXGroup;
+			children = (
+				B029301020EA6868003E6C88 /* MaskUtils.h */,
+				B0568E3320EA307E00BFF159 /* MaskSwitchView.h */,
+				B0568E3420EA307E00BFF159 /* MaskSwitchView.m */,
+				B029301720EA6F0C003E6C88 /* MaskCurtainView.h */,
+				B029301820EA6F0C003E6C88 /* MaskCurtainView.m */,
+			);
+			path = CustomMaskViews;
+			sourceTree = "<group>";
+		};
+		B09920AC20EB048F00EA0230 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B09920A120EA1C9800EA0230 /* SwitchTableViewCell.h */,
+				B09920A220EA1C9800EA0230 /* SwitchTableViewCell.m */,
+				B029301A20EA6FAF003E6C88 /* CurtainTableViewCell.h */,
+				B029301B20EA6FAF003E6C88 /* CurtainTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B09920AD20EB04B400EA0230 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B029301220EA6D64003E6C88 /* 1.png */,
+				B029301120EA6D64003E6C88 /* 0.png */,
+				B029301520EA6EA6003E6C88 /* 2.jpeg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B099209820EA1BFF00EA0230 /* LaunchScreen.storyboard in Resources */,
-				B029301420EA6D64003E6C88 /* 0.png in Resources */,
+				B029301420EA6D64003E6C88 /* 1.png in Resources */,
 				B029301620EA6EA6003E6C88 /* 2.jpeg in Resources */,
-				B029301320EA6D64003E6C88 /* 1.png in Resources */,
+				B029301320EA6D64003E6C88 /* 0.png in Resources */,
 				B099209520EA1BFF00EA0230 /* Assets.xcassets in Resources */,
 				B099209320EA1BFE00EA0230 /* Main.storyboard in Resources */,
 			);
