@@ -24,8 +24,8 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.tableFooterView = [UIView new];
-    [_tableView registerClass:[SwitchTableViewCell class] forCellReuseIdentifier:@"cell2"];
-    [_tableView registerClass:[CurtainTableViewCell class] forCellReuseIdentifier:@"cell"];
+    [_tableView registerClass:[SwitchTableViewCell class] forCellReuseIdentifier:@"cell1"];
+    [_tableView registerClass:[CurtainTableViewCell class] forCellReuseIdentifier:@"cell2"];
 }
 
 
@@ -42,7 +42,7 @@
         return [tableView dequeueReusableCellWithIdentifier:@"cell2"];
     }
     
-    return [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    return [tableView dequeueReusableCellWithIdentifier:@"cell1"];
 }
 
 

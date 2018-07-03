@@ -24,11 +24,8 @@
         _maskView = [MaskSwitchView new];
         _maskView.frame = self.contentView.bounds;
         _maskView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        
-        MaskSwitchItem *item = [MaskSwitchItem new];
-        item.image0 = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"0" ofType:@"png"]];
-        item.image1 = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"png"]];
-        _maskView.item = item;
+        _maskView.imageView0.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"0" ofType:@"png"]];
+        _maskView.imageView1.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1" ofType:@"png"]];
         
         [self.contentView addSubview:_maskView];
     }

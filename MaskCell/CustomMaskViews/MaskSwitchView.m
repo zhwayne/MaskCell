@@ -10,14 +10,7 @@
 #include "MaskUtils.h"
 
 
-@implementation MaskSwitchItem
-@end
-
-
 @interface MaskSwitchView ()
-
-@property (nonatomic, readwrite) UIImageView *imageView0;
-@property (nonatomic, readwrite) UIImageView *imageView1;
 
 @property (nonatomic) UIView *aMaskView;
 
@@ -49,11 +42,6 @@
     return self;
 }
 
-- (void)setItem:(MaskSwitchItem *)item {
-    _item = item;
-    _imageView0.image = _item.image0;
-    _imageView1.image = _item.image1;
-}
 
 - (MaskPaddingInset)paddingInset {
     CGFloat height = CGRectGetHeight(self.frame) / 2;

@@ -8,15 +8,10 @@
 
 #import "MaskBasicView.h"
 
-@interface MaskSwitchItem: NSObject
-
-@property (nonatomic) UIImage *image0;
-@property (nonatomic) UIImage *image1;
-
-@end
 
 @interface MaskSwitchView : MaskBasicView
 
-@property (nonatomic) MaskSwitchItem *item;
+@property (nonatomic) UIImageView *imageView0;
+@property (nonatomic) UIImageView *imageView1;
 
 @end
