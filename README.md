@@ -46,13 +46,11 @@ MaskBasicView 不能够直接使用，你需要派生一个子类实现你想要
     CGFloat offset = CGRectGetHeight(self.frame) / 3;
     CGFloat width = CGRectGetWidth(self.frame);
     CGFLoat height = CGRectGetHeight(self.frame);
-    CGFloat radius = sqrt(
-        pow(width - offset, 2) + pow(height - offset, 2)
-	) * (1 - progress);
+    CGFloat radius = sqrt(pow(width - offset, 2) + pow(height - offset, 2)) * (1 - progress);
     _aMaskView.layer.cornerRadius = radius;
     _aMaskView.frame = CGRectFromCenterSize(
-        CGPointMake(width - offset, height - offset),
-        CGSizeMake(radius * 2, radius * 2)
+        CGPointMake(width - offset, height - offset), 
+	CGSizeMake(radius * 2, radius * 2)
     );
 }
 
