@@ -9,15 +9,30 @@
 #ifndef MaskUtils_h
 #define MaskUtils_h
 
-#import <CoreGraphics/CoreGraphics.h>
+#include <CoreGraphics/CGBase.h>
 
-extern CGRect CGRectFromCenterSize(CGPoint center, CGSize size)
+CF_IMPLICIT_BRIDGING_ENABLED
+CF_ASSUME_NONNULL_BEGIN
+
+CG_INLINE
+CGRect CGRectFromCenterSize(CGPoint center, CGSize size)
 {
     return CGRectMake(center.x - size.width / 2,
                       center.y - size.height / 2,
                       size.width,
                       size.height);
 }
+
+OS_OVERLOADABLE
+CG_INLINE
+CGRect CGRectMake(CGPoint center, CGSize size)
+{
+    return CGRectFromCenterSize(center, size);
+}
+
+
+CF_ASSUME_NONNULL_END
+CF_IMPLICIT_BRIDGING_DISABLED
 
 #endif /* MaskUtils_h */
 

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <CoreGraphics/CGBase.h>
 
-typedef struct {
+struct MaskPaddingInset {
     CGFloat top;
     CGFloat bottom;
-} MaskPaddingInset NS_AVAILABLE_IOS(8.0);
+} NS_AVAILABLE_IOS(8.0);
+typedef struct CG_BOXABLE MaskPaddingInset MaskPaddingInset;
 
 
 NS_ASSUME_NONNULL_BEGIN

@@ -51,14 +51,19 @@
 
 - (void)didUpdateProgress:(CGFloat)progress {
     [super didUpdateProgress:progress];
-    CGFloat offset = CGRectGetHeight(self.frame) / 3;
-    CGFloat radius = sqrt(pow(CGRectGetWidth(self.frame) - offset, 2) + pow(CGRectGetHeight(self.frame) - offset, 2)) * (1 - progress);
-    _aMaskView.frame = CGRectFromCenterSize(CGPointMake(CGRectGetMaxX(self.frame) - offset,
-                                                        CGRectGetMaxY(self.frame) - offset),
-                                            CGSizeMake(radius * 2, radius * 2));
+    
+    CGFloat width = CGRectGetWidth(self.frame);
+    CGFloat height = CGRectGetHeight(self.frame);
+    CGFloat offset = MIN(height, width) / 3;
+    CGFloat radius = sqrt(pow(width - offset, 2) + pow(height - offset, 2)) * (1 - progress);
+    CGPoint center = CGPointMake(width - offset, height - offset);
+    CGSize size = CGSizeMake(radius * 2, radius * 2);
     _aMaskView.layer.cornerRadius = radius;
+    _aMaskView.frame = CGRectMake(center, size);
 }
 
 
 
 @end
+
+
