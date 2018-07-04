@@ -9,7 +9,7 @@
 #ifndef MaskUtils_h
 #define MaskUtils_h
 
-#include <CoreGraphics/CGBase.h>
+#include <CoreGraphics/CGGeometry.h>
 
 CF_IMPLICIT_BRIDGING_ENABLED
 CF_ASSUME_NONNULL_BEGIN
